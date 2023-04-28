@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js small project </title>
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+        }
+        .thumbnail_container{
+            display: flex;
+            align-items: center;
+            width: auto;
+            margin-bottom: 2rem;
+        }
+        .thumbnail_container img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        .thumbnail_container img:hover{
+            transform: scale(1.1);
+        }
+        .mainImg {
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 500px;
+            padding: 2rem;
+        }
+        .mainImg img {
+            width: 100%;
+            overflow: hidden;
+            object-fit: contain;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1> Let's put a random background color in our html body</h1> -->
+
+    <div>
+        <div class="thumbnail_container">
+            <img src="./assets/movix-logo.png" alt="">
+            <img src="./assets/avatar.png" alt="">
+            <img src="./assets/no-poster.png" alt="">
+            <img src="./assets/no-results.png" alt="">
+        </div>
+
+        <div class="mainImg">
+            <img src="./assets/movix-logo.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
